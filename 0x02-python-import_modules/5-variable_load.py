@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
 
 if __name__ == "__main__":
     """print value of variables"""
