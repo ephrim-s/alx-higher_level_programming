@@ -1,0 +1,7 @@
+#!/usr/bin/pyton3
+
+if __name__ == "__main__":
+    """print value of variables"""
+    from variable_load_5 import a
+
+    print(a)
