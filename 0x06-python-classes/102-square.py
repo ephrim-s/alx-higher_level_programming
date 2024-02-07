@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""py class"""
+
 
 class Square:
+    """square class"""
     def __init__(self, size=0):
         if type(size) != int and type(size) != float:
             raise TypeError("size must be a number")
@@ -26,19 +29,25 @@ class Square:
         return self.__size * self.__size
 
     def __eq__(self, other):
+        """checks equal to another square"""
         return(self.area() == other.area())
 
     def __lt__(self, other):
+        """checks less than other square"""
         return(self.area() < other.area())
 
     def __le__(self, other):
+        """checks less than or equal to other square"""
         return(self.area() <= other.area())
 
     def __ne__(self, other):
+        """checks not equal to another suqare"""
         return(self.area() != other.area())
 
     def __gt__(self, other):
+        """checks greater than another square"""
         return(self.area() > other.area())
 
     def __ge__(self, other):
+        """checks greater than or equal to another square"""
         return(self.area() >= other.area())

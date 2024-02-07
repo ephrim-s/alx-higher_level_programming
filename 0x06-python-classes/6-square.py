@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""py classes"""
 
 class Square:
+    """definig squre class"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -43,9 +45,9 @@ class Square:
     @position.setter
     def position(self, value):
         """
-            setter of position
+            position setter
         Args:
-            value (tuple): position of the square in 2D space
+            value (tuple): position of the square in 2 Dimension space
         Returns:
             None
         """
@@ -59,7 +61,7 @@ class Square:
 
     def area(self):
         """
-        get area
+        displays area
         Return:
             area (int)
         """
@@ -67,7 +69,7 @@ class Square:
 
     def my_print(self):
         """
-        print a square
+        display a square
         Returns:
             None
         """
