@@ -8,35 +8,35 @@ class Rectangle
 class Rectangle:
     """rectangle class"""
 
-    def __init__(self, wdth=0, hght=0):
+    def __init__(self, width=0, height=0):
         """initializing class"""
-        self.wdth = wdth
-        self.hght = hght
+        self.width = width
+        self.height = height
 
     @property
-    def wdth(self):
-        """Get wdth"""
-        return self.__wdth
+    def width(self):
+        """Get width"""
+        return self.__width
 
-    @wdth.setter
-    def wdth(self, wdthValue):
-        """Set wdth"""
-        if type(wdthValue) != int:
-            raise TypeError("wdth must be an integer")
-        if wdthValue < 0:
-            raise ValueError("wdth must be >= 0")
-        self.__wdth = wdthValue
+    @width.setter
+    def width(self, widthValue):
+        """Set width"""
+        if type(widthValue) != int:
+            raise TypeError("width must be an integer")
+        if widthValue < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = widthValue
 
     @property
-    def hght(self):
-        """Get hght"""
-        return self.__hght
+    def height(self):
+        """Get height"""
+        return self.__height
 
-    @hght.setter
-    def hght(self, hghtValue):
-        """Set hght"""
-        if type(hghtValue) != int:
-            raise TypeError("hght must be an integer")
-        if hghtValue < 0:
-            raise ValueError("hght must be >= 0")
-        self.__hght = hghtValue
+    @height.setter
+    def height(self, heightValue):
+        """Set height"""
+        if type(heightValue) != int:
+            raise TypeError("height must be an integer")
+        if heightValue < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = heightValue
